@@ -1,0 +1,28 @@
+Description: Add sunway support
+Author: Miao Changwei <miaochangwei@uniontech.com>
+
+---
+Last-Update: 2022-05-05
+
+--- automake-1.16-1.16.5.orig/lib/config.guess
++++ automake-1.16-1.16.5/lib/config.guess
+@@ -1140,6 +1140,9 @@ EOF
+     sparc:Linux:*:* | sparc64:Linux:*:*)
+ 	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
+ 	;;
++    sw_64:Linux:*:*)
++	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
++	;;
+     tile*:Linux:*:*)
+ 	GUESS=$UNAME_MACHINE-unknown-linux-$LIBC
+ 	;;
+--- automake-1.16-1.16.5.orig/lib/config.sub
++++ automake-1.16-1.16.5/lib/config.sub
+@@ -1262,6 +1262,7 @@ case $cpu-$vendor in
+ 			| sparclite \
+ 			| sparcv8 | sparcv9 | sparcv9b | sparcv9v | sv1 | sx* \
+ 			| spu \
++			| sw_64 \
+ 			| tahoe \
+ 			| thumbv7* \
+ 			| tic30 | tic4x | tic54x | tic55x | tic6x | tic80 \
