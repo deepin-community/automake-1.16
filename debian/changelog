@@ -1,14 +1,25 @@
-automake-1.16 (1:1.16.5.1-1+dde) UNRELEASED; urgency=medium
+automake-1.16 (1:1.16.5-1.3deepin1) unstable; urgency=medium
 
-  * update
-
- -- Eric Dorland <eric@debian.org>  Tue, 26 Jul 2022 11:19:30 +0800
-
-automake-1.16 (1:1.16.5.1-1+dde) unstable; urgency=medium
-
+  [ Changwei Miao ]
   * Add sunway support.
 
- -- Changwei Miao <miaochangwei@uniontech.com>  Tue, 26 Jul 2022 03:10:10 +0000
+ -- Tianyu Chen <sweetyfish@deepin.org>  Wed, 22 Nov 2023 15:44:33 +0800
+
+automake-1.16 (1:1.16.5-1.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix a regression in the patch in 1:1.16.5-1.2, support older Python
+    versions. (Closes: #1007912)
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 18 Mar 2022 09:09:08 -0400
+
+automake-1.16 (1:1.16.5-1.2) unstable; urgency=medium
+
+  * Non maintainer upload
+  * Patch: Fix search paths for new Python 3.10, use posix_prefix scheme.
+    (Closes: #1006784, LP: #1960608)
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 15 Mar 2022 20:13:57 -0400
 
 automake-1.16 (1:1.16.5-1.1) unstable; urgency=medium
 
